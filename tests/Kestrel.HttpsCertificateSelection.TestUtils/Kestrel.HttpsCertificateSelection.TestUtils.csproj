@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="BouncyCastle" Version="1.8.9" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Kestrel.HttpsCertificateSelection\Kestrel.HttpsCertificateSelection.csproj" />
+	</ItemGroup>
+</Project>

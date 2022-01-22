@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.HttpsCertificateSelection", "Kestrel.HttpsCertificateSelection\Kestrel.HttpsCertificateSelection.csproj", "{C3180303-5201-4D2D-B513-A658439C59D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{76F48CDC-524A-42DF-B94E-524C63BCE69E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.HttpsCertificateSelectionTests", "tests\Kestrel.HttpsCertificateSelectionTests\Kestrel.HttpsCertificateSelectionTests.csproj", "{755B48B8-DED0-4E58-A87F-E5B22C4C3060}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.HttpsCertificateSelection.TestUtils", "tests\Kestrel.HttpsCertificateSelection.TestUtils\Kestrel.HttpsCertificateSelection.TestUtils.csproj", "{5622591D-9F90-4E80-A1C5-62AA956FE833}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{32054B16-E962-4E41-B6D5-50CF50800E9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.HttpsCertificateSelection.AzureKeyVault", "Kestrel.HttpsCertificateSelection.AzureKeyVault\Kestrel.HttpsCertificateSelection.AzureKeyVault.csproj", "{DD5321FF-D164-4CA7-AFC6-86D37C28A240}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecuredHelloWorldApi", "samples\SecuredHelloWorldApi\SecuredHelloWorldApi.csproj", "{441B49F3-1AF3-4E3B-A059-B86FF6CB8EFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3180303-5201-4D2D-B513-A658439C59D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3180303-5201-4D2D-B513-A658439C59D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3180303-5201-4D2D-B513-A658439C59D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3180303-5201-4D2D-B513-A658439C59D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{755B48B8-DED0-4E58-A87F-E5B22C4C3060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{755B48B8-DED0-4E58-A87F-E5B22C4C3060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{755B48B8-DED0-4E58-A87F-E5B22C4C3060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{755B48B8-DED0-4E58-A87F-E5B22C4C3060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5622591D-9F90-4E80-A1C5-62AA956FE833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5622591D-9F90-4E80-A1C5-62AA956FE833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5622591D-9F90-4E80-A1C5-62AA956FE833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5622591D-9F90-4E80-A1C5-62AA956FE833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD5321FF-D164-4CA7-AFC6-86D37C28A240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5321FF-D164-4CA7-AFC6-86D37C28A240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5321FF-D164-4CA7-AFC6-86D37C28A240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5321FF-D164-4CA7-AFC6-86D37C28A240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{441B49F3-1AF3-4E3B-A059-B86FF6CB8EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{441B49F3-1AF3-4E3B-A059-B86FF6CB8EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{441B49F3-1AF3-4E3B-A059-B86FF6CB8EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{441B49F3-1AF3-4E3B-A059-B86FF6CB8EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{755B48B8-DED0-4E58-A87F-E5B22C4C3060} = {76F48CDC-524A-42DF-B94E-524C63BCE69E}
+		{5622591D-9F90-4E80-A1C5-62AA956FE833} = {76F48CDC-524A-42DF-B94E-524C63BCE69E}
+		{441B49F3-1AF3-4E3B-A059-B86FF6CB8EFE} = {32054B16-E962-4E41-B6D5-50CF50800E9F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F5812CE-EAC4-41AF-87D0-D3B85260F18A}
+	EndGlobalSection
+EndGlobal
