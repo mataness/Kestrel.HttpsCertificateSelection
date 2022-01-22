@@ -4,6 +4,16 @@ Integrate automatic server SSL/TLS certificate rotation to your Web API server!
 Fetches the server certificate from a given certificate source (such as machine local certificate store or Azure KeyVault) and periodically queries that certificate source for new certificate versions.
 When a new certificate is detected, the library will bind the new certificate version to your server HTTPS pipline, so when your server SSL/TLS certificate is renewed or replaced, the new ceritificate will be picked up automatically by the library.
 
+### Main features:
+* Automatic server SSL/TLS certificate rotation
+* Easy to configure, integrate and run locally
+* Exposes events (callback registrations) to monitor the certificate rotation flow and trigger alarms when it fails
+* Thread safe
+* Currently supported certificate sources
+  * Local certificate store
+  * Azure KeyVault
+* Easy to extend for any certificate source.
+
 #### When your server SSL/TLS certificate is renewed or replaced, there is no need to restart or redeploy your Web API service!
 
 #### Easy to configure and integrate
