@@ -53,6 +53,6 @@ The library integrates with Kestrel configuration pipeline and allows you to eas
 </code></pre>
 
 #### Current built-in supported server certificate sources:
-* Local certificate store (Machine / CurrentUser) ![NuGet](https://img.shields.io/nuget/v/Kestrel.HttpsCertificateSelection)
-* Azure KeyVault ![NuGet](https://img.shields.io/nuget/v/Kestrel.HttpsCertificateSelection.AzureKeyVault)
+* Local certificate store (Machine / CurrentUser) [![Kestrel.HttpsCertificateSelection](https://img.shields.io/nuget/v/Kestrel.HttpsCertificateSelection.svg)](https://www.nuget.org/packages/Kestrel.HttpsCertificateSelection/)
+* Azure KeyVault [![Kestrel.HttpsCertificateSelection.AzureKeyVault](https://img.shields.io/nuget/v/Kestrel.HttpsCertificateSelection.AzureKeyVault.svg)](https://www.nuget.org/packages/Kestrel.HttpsCertificateSelection.AzureKeyVault/)
 * AWS Secret Manager (WIP)
