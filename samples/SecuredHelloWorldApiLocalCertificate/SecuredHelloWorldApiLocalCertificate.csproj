@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Kestrel.HttpsCertificateSelection\Kestrel.HttpsCertificateSelection.csproj" />
+	</ItemGroup>
+</Project>

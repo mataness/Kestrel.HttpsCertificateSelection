@@ -13,21 +13,26 @@ namespace Kestrel.HttpsCertificateSelection.CertificateSelection.LocalStore
     public class LocalStoreServerCertificateSource : IServerCertificateSource
     {
         public LocalStoreServerCertificateSource(
-            string subjectName,
+            object findValue,
+            X509FindType findType,
             ILocalCertificateStoreReader localCertificateStoreReader,
             IX509CertificateAnalyzer certificateAnalyzer)
         {
             _localCertificateStoreReader = localCertificateStoreReader ?? throw new ArgumentNullException(nameof(localCertificateStoreReader));
             _certificateAnalyzer = certificateAnalyzer ?? throw new ArgumentNullException(nameof(certificateAnalyzer));
-            SubjectName = string.IsNullOrWhiteSpace(subjectName) ? throw new ArgumentNullException() : subjectName;
+            FindValue = findValue ?? throw new ArgumentNullException();
+            FindType = findType;
         }
 
-        public string SubjectName { get; }
+        public object FindValue { get; }
+
+        public X509FindType FindType { get; }
 
         public string Source =>
             "Local Certificate Store: " +
             $"{nameof(_localCertificateStoreReader.Location)}:{_localCertificateStoreReader.Location}, " +
-            $"{nameof(SubjectName)}:{SubjectName}";
+            $"{nameof(FindType)}:{FindType}, " +
+            $"{nameof(FindValue)}:{FindValue}";
 
         public Task<X509Certificate2> GetLatestCertificateAsync(bool validOnly)
         {
@@ -38,7 +43,7 @@ namespace Kestrel.HttpsCertificateSelection.CertificateSelection.LocalStore
                 var now = DateTime.Now;
                 var latestCert = _localCertificateStoreReader
                     .Certificates
-                    .Find(X509FindType.FindBySubjectName, SubjectName, validOnly: validOnly)
+                    .Find(FindType, FindValue, validOnly: validOnly)
                     .Cast<X509Certificate2>()
                     .Where(cert => _certificateAnalyzer.IsAllowedForServerAuthentication(cert))
                     .OrderByDescending(cert => cert.NotBefore)

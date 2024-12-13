@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<Description>An extension library for Kestrel.HttpsCertificateSelection which adds Azure KeyVault certificate source</Description>
 		<PackageTags>Kestrel, SSL, TLS, certificate, rotation, Azure, KeyVault</PackageTags>
