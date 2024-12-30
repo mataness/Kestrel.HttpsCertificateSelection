@@ -13,15 +13,19 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: '6.0.x'
-
     - name: Setup .NET 3
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: '3.1.x'
+
+    - name: Setup .NET 6
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '6.0.x'
+
+    - name: Set environment variables
+      run: |
+        echo "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true" >> $GITHUB_ENV
 
     - name: Restore dependencies
       run: dotnet restore
