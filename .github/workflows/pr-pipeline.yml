@@ -23,6 +23,11 @@ jobs:
       with:
         dotnet-version: '6.0.x'
 
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libssl-dev libicu-dev
+
     - name: Set environment variables
       run: |
         echo "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true" >> $GITHUB_ENV
