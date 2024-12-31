@@ -23,14 +23,9 @@ jobs:
       with:
         dotnet-version: '6.0.x'
 
-    - name: Install dependencies
-      run: |
-        choco install openssl.light
-        choco install icu
-
     - name: Set environment variables
       run: |
-        echo "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true" >> $env:GITHUB_ENV
+        echo "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true" >> $GITHUB_ENV
 
     - name: Restore dependencies
       run: dotnet restore
