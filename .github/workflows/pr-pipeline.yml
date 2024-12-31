@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout code
@@ -25,12 +25,12 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo apt-get update
-        sudo apt-get install -y libssl-dev libicu-dev
+        choco install openssl.light
+        choco install icu
 
     - name: Set environment variables
       run: |
-        echo "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true" >> $GITHUB_ENV
+        echo "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true" >> $env:GITHUB_ENV
 
     - name: Restore dependencies
       run: dotnet restore
