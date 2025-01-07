@@ -18,9 +18,9 @@
 		<Author>mataness</Author>
 		<AssemblyName>Kestrel.HttpsCertificateSelection</AssemblyName>
 		<RootNamespace>Kestrel.HttpsCertificateSelection</RootNamespace>
-		<Version>2.0.0</Version>
+		<Version>2.1.0</Version>
 		<PackageReleaseNotes>
-			Changing the local store certificate options to allow searching the cert store with FindValue and FindType
+			Allowing for custom IServerCertificateSource implementation to be used for retrieval of the certificate from the local store
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
