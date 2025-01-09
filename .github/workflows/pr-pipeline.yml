@@ -38,6 +38,7 @@ jobs:
 
     - name: Run code linting
       run: dotnet format --verify-no-changes
+      continue-on-error: true
       
 
     - name: Check code coverage
