@@ -37,8 +37,8 @@ jobs:
       run: dotnet test --no-build --verbosity normal
 
     - name: Run code linting
-      run: dotnet format --check
-      working-directory: ../../
+      run: dotnet format --verify-no-changes
+      working-directory: ../../Kestrel.HttpsCertificateSelection.sln
 
     - name: Check code coverage
       run: dotnet test --collect:"XPlat Code Coverage"
