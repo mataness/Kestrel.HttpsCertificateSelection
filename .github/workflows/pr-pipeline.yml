@@ -38,6 +38,7 @@ jobs:
 
     - name: Run code linting
       run: dotnet format --check
+      working-directory: ../../
 
     - name: Check code coverage
       run: dotnet test --collect:"XPlat Code Coverage"
