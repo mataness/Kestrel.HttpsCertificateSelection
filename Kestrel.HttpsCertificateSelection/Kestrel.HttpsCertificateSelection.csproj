@@ -18,8 +18,9 @@
 		<Author>mataness</Author>
 		<AssemblyName>Kestrel.HttpsCertificateSelection</AssemblyName>
 		<RootNamespace>Kestrel.HttpsCertificateSelection</RootNamespace>
-		<Version>2.0.0</Version>
+		<Version>2.1.0</Version>
 		<PackageReleaseNotes>
+			2.1.0 - Target more .NET versions
 			Changing the local store certificate options to allow searching the cert store with FindValue and FindType
 		</PackageReleaseNotes>
 	</PropertyGroup>
