@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using Org.BouncyCastle.Asn1;
 using Org.BouncyCastle.Asn1.Pkcs;
@@ -33,23 +33,22 @@ namespace Kestrel.HttpsCertificateSelection.TestUtils
 
         private static void SetSubjectAndIssuer(X509V3CertificateGenerator gen, string commonName, bool allowedForServerAuth = false)
         {
-            var attrs = new Hashtable
+            var attrs = new Dictionary<DerObjectIdentifier, string>
             {
                 [X509Name.CN] = commonName
             };
 
-
-            var ord = new ArrayList
-                {
-                    X509Name.CN
-                };
+            var ord = new List<DerObjectIdentifier>
+            {
+                X509Name.CN
+            };
 
             if (!allowedForServerAuth)
             {
                 gen.AddExtension(
                     X509Extensions.ExtendedKeyUsage.Id,
                     false,
-                    new ExtendedKeyUsage(new[] { KeyPurposeID.IdKPClientAuth }));
+                    new ExtendedKeyUsage(new[] { KeyPurposeID.id_kp_clientAuth }));
             }
 
             gen.SetSubjectDN(new X509Name(ord, attrs));

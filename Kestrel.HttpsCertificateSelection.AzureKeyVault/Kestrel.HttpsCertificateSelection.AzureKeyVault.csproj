@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<TargetFrameworks>netstandard2.0;netcoreapp3.1;net6.0;net8.0</TargetFrameworks>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<Description>An extension library for Kestrel.HttpsCertificateSelection which adds Azure KeyVault certificate source</Description>
 		<PackageTags>Kestrel, SSL, TLS, certificate, rotation, Azure, KeyVault</PackageTags>
@@ -12,8 +12,9 @@
 		<Authors>mataness</Authors>
 		<AssemblyName>Kestrel.HttpsCertificateSelection.AzureKeyVault</AssemblyName>
 		<RootNamespace>Kestrel.HttpsCertificateSelection.AzureKeyVault</RootNamespace>
-		<Version>2.0.0</Version>
+		<Version>2.1.0</Version>
 		<PackageReleaseNotes>
+			2.1.0 - Target more .NET versions
 			Changing the local store certificate options to allow searching the cert store with FindValue and FindType
 		</PackageReleaseNotes>
   </PropertyGroup>
