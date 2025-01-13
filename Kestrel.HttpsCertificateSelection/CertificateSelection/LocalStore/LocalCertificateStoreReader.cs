@@ -12,6 +12,11 @@ namespace Kestrel.HttpsCertificateSelection.CertificateSelection.LocalStore
             _certStore = new X509Store(StoreName.My, location);
         }
 
+        public LocalCertificateStoreReader(string name, StoreLocation location)
+        {
+            _certStore = new X509Store(name, location);
+        }
+
         /// <inheritdoc/>
         public StoreLocation Location
             => _certStore.Location;
