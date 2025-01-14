@@ -49,7 +49,8 @@ namespace Kestrel.HttpsCertificateSelection
                 var options = new ServerLocalCertificateStoreConfigurationOptions();
                 configOptions(options);
 
-                var serverCertificateProvider = new LocalStoreServerCertificateSource(options.FindValue, options.FindType, new LocalCertificateStoreReader(options.Location), new X509CertificateAnalyzer());
+                var localCertStoreReader = new LocalCertificateStoreReader(options.StoreName, options.Location);
+                var serverCertificateProvider = new LocalStoreServerCertificateSource(options.FindValue, options.FindType, localCertStoreReader, new X509CertificateAnalyzer());
                 serverConfigOptions.ValidCertificatesOnly = options.ValidCertificatesOnly;
                 serverConfigOptions.PollingInterval = options.PollingInterval;
                 serverConfigOptions.SelectorConfigureOptions = options.SelectorConfigureOptions;
