@@ -19,8 +19,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecuredHelloWorldApiLocalCe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecuredHelloWorldApiKeyvaultCertificate", "samples\SecuredHelloWorldApiKeyvaultCertificate\SecuredHelloWorldApiKeyvaultCertificate.csproj", "{B4399418-13A6-1CF5-F154-277BC0D2FD3F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecuredHelloWorldApiLocalCertificateCustomStore", "samples\SecuredHelloWorldApiLocalCertificateCustomStore\SecuredHelloWorldApiLocalCertificateCustomStore.csproj", "{BF9FE484-1FF9-4914-A631-6B7BF119F892}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,10 +49,6 @@ Global
 		{B4399418-13A6-1CF5-F154-277BC0D2FD3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4399418-13A6-1CF5-F154-277BC0D2FD3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4399418-13A6-1CF5-F154-277BC0D2FD3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF9FE484-1FF9-4914-A631-6B7BF119F892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF9FE484-1FF9-4914-A631-6B7BF119F892}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF9FE484-1FF9-4914-A631-6B7BF119F892}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF9FE484-1FF9-4914-A631-6B7BF119F892}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,7 +58,6 @@ Global
 		{5622591D-9F90-4E80-A1C5-62AA956FE833} = {76F48CDC-524A-42DF-B94E-524C63BCE69E}
 		{F9D46C68-F275-CB4B-36BD-FAB97C1FDD99} = {32054B16-E962-4E41-B6D5-50CF50800E9F}
 		{B4399418-13A6-1CF5-F154-277BC0D2FD3F} = {32054B16-E962-4E41-B6D5-50CF50800E9F}
-		{BF9FE484-1FF9-4914-A631-6B7BF119F892} = {32054B16-E962-4E41-B6D5-50CF50800E9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F5812CE-EAC4-41AF-87D0-D3B85260F18A}

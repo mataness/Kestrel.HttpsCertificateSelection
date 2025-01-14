@@ -23,9 +23,8 @@ namespace Kestrel.HttpsCertificateSelection.CertificateSelection.Configuration
         public StoreLocation Location { get; set; } = StoreLocation.LocalMachine;
 
         /// <summary>
-        /// Optional - the store name, defaults to null/>
-        /// When this is null the system will use <see cref="StoreName.My"/>
+        /// Optional - the store name, defaults to "My"/>
         /// </summary>
-        public string StoreName { get; set; } = null;
+        public string StoreName { get; set; } = System.Security.Cryptography.X509Certificates.StoreName.My.ToString();
     }
 }

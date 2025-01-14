@@ -49,10 +49,7 @@ namespace Kestrel.HttpsCertificateSelection
                 var options = new ServerLocalCertificateStoreConfigurationOptions();
                 configOptions(options);
 
-                var localCertStoreReader =
-                    string.IsNullOrWhiteSpace(options.StoreName)
-                        ? new LocalCertificateStoreReader(options.Location)
-                        : new LocalCertificateStoreReader(options.StoreName, options.Location);
+                var localCertStoreReader = new LocalCertificateStoreReader(options.StoreName, options.Location);
                 var serverCertificateProvider = new LocalStoreServerCertificateSource(options.FindValue, options.FindType, localCertStoreReader, new X509CertificateAnalyzer());
                 serverConfigOptions.ValidCertificatesOnly = options.ValidCertificatesOnly;
                 serverConfigOptions.PollingInterval = options.PollingInterval;
