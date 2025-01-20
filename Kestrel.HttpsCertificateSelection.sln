@@ -1,7 +1,7 @@
-﻿
+﻿﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35507.96
+VisualStudioVersion = 17.13.35507.96 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.HttpsCertificateSelection", "Kestrel.HttpsCertificateSelection\Kestrel.HttpsCertificateSelection.csproj", "{C3180303-5201-4D2D-B513-A658439C59D7}"
 EndProject
@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{3205
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.HttpsCertificateSelection.AzureKeyVault", "Kestrel.HttpsCertificateSelection.AzureKeyVault\Kestrel.HttpsCertificateSelection.AzureKeyVault.csproj", "{DD5321FF-D164-4CA7-AFC6-86D37C28A240}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecuredHelloWorldApiLocalCertificate", "samples\SecuredHelloWorldApiLocalCertificate\SecuredHelloWorldApiLocalCertificate.csproj", "{F9D46C68-F275-CB4B-36BD-FAB97C1FDD99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecuredHelloWorldApiLocalCertificate", "samples\SecuredHelloWorldApiLocalCertificate\SecuredHelloWorldApiLocalCertificate.csproj", "{F9D46C68-F275-CB4B-36BD-FAB97C1FDD99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecuredHelloWorldApiKeyvaultCertificate", "samples\SecuredHelloWorldApiKeyvaultCertificate\SecuredHelloWorldApiKeyvaultCertificate.csproj", "{B4399418-13A6-1CF5-F154-277BC0D2FD3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{F9D46C68-F275-CB4B-36BD-FAB97C1FDD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9D46C68-F275-CB4B-36BD-FAB97C1FDD99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9D46C68-F275-CB4B-36BD-FAB97C1FDD99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4399418-13A6-1CF5-F154-277BC0D2FD3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4399418-13A6-1CF5-F154-277BC0D2FD3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4399418-13A6-1CF5-F154-277BC0D2FD3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4399418-13A6-1CF5-F154-277BC0D2FD3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{755B48B8-DED0-4E58-A87F-E5B22C4C3060} = {76F48CDC-524A-42DF-B94E-524C63BCE69E}
 		{5622591D-9F90-4E80-A1C5-62AA956FE833} = {76F48CDC-524A-42DF-B94E-524C63BCE69E}
 		{F9D46C68-F275-CB4B-36BD-FAB97C1FDD99} = {32054B16-E962-4E41-B6D5-50CF50800E9F}
+		{B4399418-13A6-1CF5-F154-277BC0D2FD3F} = {32054B16-E962-4E41-B6D5-50CF50800E9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F5812CE-EAC4-41AF-87D0-D3B85260F18A}
